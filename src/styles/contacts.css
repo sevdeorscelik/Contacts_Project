@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+
+#container {
+    width: 50rem;
+    padding: 50px;
+    border: double 10px #363062;
+    border-radius: 40px;
+    background-color: #92BA92;
+    display: flex;
+    flex-direction: row;
+
+    align-items: start;
+
+
+    font-family: 'Prosto One', cursive;
+}
+
+h1 {
+    color: #363062;
+    background-color: #92BA92;
+    border: solid 3px #363062;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+form {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    margin-right: 5rem;
+
+}
+
+.filterInput {
+    width: 60%;
+}
+
+input {
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+    font-size: 1.7rem;
+    background-color: #F1DDBF;
+    border: solid 1px #1D5C63;
+    border-radius: 15px;
+
+}
+
+input::placeholder {
+    color: #92BA92;
+    /*font-family: 'Koulen', cursive;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.listCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px #1D5C63;
+    width: 100%;
+
+
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    border-bottom: solid 1px #1D5C63;
+    align-items: center;
+    width: 100%;
+
+}
+
+.list {
+    margin: 30px 0;
+    padding: 0 5px;
+}
+
+.list li {
+    list-style: none;
+    color: #1D5C63;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.phoneNum {
+    font-size: 1rem;
+}
+
+.del {
+    cursor: pointer;
+}
+
+.btnAdd {
+    color: #F1DDBF;
+    cursor: pointer;
+    background-color: #1D5C63;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.total {
+    align-self: flex-end;
+    color: #1D5C63;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1063px) {
+    .lists {
+        gap: .5rem;
+    }
+}
+
+input {
+
+    font-size: 1rem;
+    background-color: #F1DDBF;
+    border: solid 1px #1D5C63;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 786px) {
+    #container{
+        gap: 1rem;
+    }
+
+    form{
+        margin: 0;
+    }
+
+    .phoneNum {
+        display: none;
+
+    }
+
+    .total {
+        font-size: .8rem;
+    }
+
+    .btnAdd {
+        padding: 3px 10px;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 724px) {
+
+    .phoneNum {
+        display: none;
+
+    }
+
+    .total {
+        font-size: .8rem;
+    }
+
+    .btnAdd {
+        padding: 3px 10px;
+        font-size: .7rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    #container {
+
+        width: 50%;
+        padding: 25px;
+        border: double 10px #363062;
+        border-radius: 40px;
+        background-color: #92BA92;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .phoneNum {
+        display: block;
+
+    }
+
+    .listCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: none;
+        width: 100%;
+        border-top: solid 1px #1D5C63;
+        margin-top: 20px;
+        padding-top: 20px;
+
+    }
+
+    form {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        width: 100%;
+
+    }
+
+    .filterInput {
+        width: 50%;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .listCont {
+        font-size: .5rem;
+
+    }
+
+    .del {
+        display: none;
+    }
+
+    .list li {
+        font-size: 1rem;
+    }
+
+    .phoneNum {
+        font-size: .6rem;
+    }
+}
