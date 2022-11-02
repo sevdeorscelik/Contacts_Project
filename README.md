@@ -1,6 +1,6 @@
 # Contacts_Project
 
-## demo : ([contacts-project-bxz77xg4j-sevdeorscelik.vercel.app](https://contacts-project-bxz77xg4j-sevdeorscelik.vercel.app/))
+## demo : [link](https://contacts-project-bxz77xg4j-sevdeorscelik.vercel.app/)
 
 <img src="./src/img/ss-contacts.png" height="400" />
 
