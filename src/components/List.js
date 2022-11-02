@@ -22,28 +22,27 @@ const List = ({ contacts }) => {
 
     return (
         <div className="listCont">
+
             <input
-            className="filterInput"
+                className="filterInput"
                 placeholder="Filter contact"
                 value={filterText}
                 onChange={(e) => setFilterText(e.target.value)}
             />
+            <button className="btn-toggle" onClick={showNumber}>{toggle ? 'Hide' : 'Show'} </button>
+
             <ul className="list">
                 {
-                    filtered.map((contact, index) => (
+                    filtered.map((contact, i) => (
                         <div className="lists">
-                            
-                            <li key={index} onClick={showNumber} >
-                                {contact.fullname}
-                                
-                            </li>
-                            
+
+                            <li key={i}> {contact.fullname} </li>
+
                             {toggle && (
                                 <div className="phoneNum">{contact.phone_number}</div>
                             )}
-                            
-                        </div>
 
+                        </div>
 
                     ))
                 }

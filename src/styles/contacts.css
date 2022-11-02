@@ -61,6 +61,15 @@ input::placeholder {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.btn-toggle {
+    margin-top: 2rem;
+    color: #F1DDBF;
+    cursor: pointer;
+    background-color: #1D5C63;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
 .listCont {
     display: flex;
     flex-direction: column;
@@ -75,6 +84,7 @@ input::placeholder {
 .lists {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 3rem;
     border-bottom: solid 1px #1D5C63;
     align-items: center;
@@ -121,6 +131,7 @@ input::placeholder {
 @media screen and (max-width: 1063px) {
     .lists {
         gap: .5rem;
+        
     }
 }
 
@@ -140,11 +151,6 @@ input {
 
     form{
         margin: 0;
-    }
-
-    .phoneNum {
-        display: none;
-
     }
 
     .total {
@@ -178,7 +184,7 @@ input {
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1068px) {
     #container {
         width: 80%;
     }
@@ -205,6 +211,7 @@ input {
 
     .phoneNum {
         display: block;
+        margin-bottom: .5rem;
 
     }
 
@@ -239,6 +246,12 @@ input {
     input {
         width: 100%;
     }
+
+    .lists{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -251,6 +264,7 @@ input {
         display: none;
     }
 
+   
     .list li {
         font-size: 1rem;
     }

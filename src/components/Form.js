@@ -23,11 +23,18 @@ const Form = ({addContact,  contacts}) => {
     const onSubmit = (e) => {
         e.preventDefault()
 
-        if(form.fullname === '' || form.phone_number === ''){
-            alert('Please fill in the blanks !')
+        if(form.fullname === '' || form.phone_number === '' || form.phone_number.length < 5){
+            
+            if(form.phone_number.length <= 5){
+                alert('Please fill in the blanks !')
+            } else{
+                alert('Please enter a valid phone number!')
+            }
+        } else{
+            addContact([...contacts,form])
+
         }
 
-        addContact([...contacts,form])
         //setForm({fullname:'', phone_number:''}) //butona tikladiktan sonra inputlari bosaltmak icin 1. yol
         //setForm(resetFormValues) //zeile 10. Bu sekilde brden fazla inputu daha kolay yazariz. 2.yol
 
